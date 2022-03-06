@@ -1,8 +1,9 @@
 .footer {
   width: 100%;
+  padding: 1.2rem;
   background-color: #fff;
   position: relative;
-  padding: 1rem;
+  margin: 0;
   bottom: 0;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
