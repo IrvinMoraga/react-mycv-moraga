@@ -1,0 +1,48 @@
+.characterReferencesContainer {
+  width: 100%;
+}
+
+.characterReferencesHeader {
+  font-family: 'Libre Baskerville', serif;
+  margin-bottom: 2rem;
+}
+
+.characterReferencesBody {
+  font-family: 'Montserrat', serif;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.characterReferencesList {
+  margin-left: 2rem;
+}
+
+.characterReference {
+  margin-bottom: 2rem;
+  margin-right: 5rem;
+  width: 100%;
+}
+
+.characterReferencesList:last-child {
+  margin-bottom: -1rem;
+}
+
+.characterReferenceHeader {
+  font-family: 'Libre Baskerville', serif;
+  margin-bottom: 1rem;
+  color: rgb(212, 181, 0);
+}
+
+.characterReferenceDescription {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 624px) {
+  .characterReferencesHeader {
+    font-size: 1.5rem;
+  }
+
+  .characterReferencesBody {
+    font-size: 1rem;
+  }
+}

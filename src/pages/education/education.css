@@ -1,0 +1,54 @@
+.educationContainer {
+  width: 100%;
+}
+
+.educationHeader {
+  font-family: 'Libre Baskerville', serif;
+  margin-bottom: 2rem;
+}
+
+.educationBody {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Montserrat', serif;
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+.school {
+  line-height: 3rem;
+  margin: 0 2rem;
+  margin-right: 5rem;
+}
+
+.schoolName {
+  font-weight: bold;
+  color: rgb(212, 181, 0);
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+@media only screen and (max-width: 1853px) {
+  .school {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 624px) {
+  .educationHeader {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .educationBody {
+    font-size: 1rem;
+  }
+
+  .school {
+    margin: 0;
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+}

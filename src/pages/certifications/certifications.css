@@ -1,0 +1,42 @@
+.certificatonsContainer {
+  width: 100%;
+}
+
+.certificationsHeader {
+  font-family: 'Libre Baskerville', serif;
+  margin-bottom: 2rem;
+}
+
+.certificationsBody {
+  font-family: 'Montserrat', serif;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.certificationsList {
+  margin-left: 2rem;
+}
+
+.certification {
+  margin-bottom: 2rem;
+}
+
+.certificationsList:last-child {
+  margin-bottom: -1rem;
+}
+
+.certificationHeader {
+  font-family: 'Libre Baskerville', serif;
+  margin-bottom: 0.5rem;
+  color: rgb(212, 181, 0);
+}
+
+@media only screen and (max-width: 624px) {
+  .certificationsHeader {
+    font-size: 1.5rem;
+  }
+
+  .certificationsBody {
+    font-size: 1rem;
+  }
+}

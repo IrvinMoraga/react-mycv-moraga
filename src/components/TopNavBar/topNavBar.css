@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: RGB(42, 46, 47);
+}
+
+.topNavBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Libre Baskerville', serif;
+  height: 4.6875rem;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+}
+
+.mobileTopNavBar {
+  margin-bottom: 22rem;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.topNavBarTitle {
+  font-size: 1rem;
+}
+
+.topNavBarLinks {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  width: 75%;
+}
+
+.topNavBarLink {
+  font-size: 1rem;
+  padding: 0.625rem 1.25rem;
+  margin: 0 0.3125rem;
+  cursor: pointer;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: rgb(212, 181, 0);
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(212, 181, 0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.toggleNavBar {
+  display: none;
+}
+
+@media only screen and (max-width: 1599px) {
+  .topNavBarTitle {
+    display: flex;
+    position: absolute;
+    top: 1.1rem;
+    left: 1rem;
+  }
+
+  .topNavBarLinks {
+    display: none;
+  }
+
+  .mobile-topNavBarLinks {
+    -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    padding: 0.5rem auto;
+    display: block;
+    list-style: none;
+    background-color: #fff;
+    left: 0;
+    top: 4.6875rem;
+    transition: display 2s;
+    width: 100%;
+  }
+
+  .topNavBarLink {
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .toggleNavBar {
+    display: block;
+    position: absolute;
+    font-size: 1.875rem;
+    color: black;
+    border: none;
+    background: none;
+    right: 1.5625rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .topNavBarTitle {
+    font-size: 0.8rem;
+    position: absolute;
+    top: 1.4rem;
+  }
+}
